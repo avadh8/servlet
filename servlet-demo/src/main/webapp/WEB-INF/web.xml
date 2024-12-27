@@ -1,0 +1,28 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="3.1">
+    <servlet>
+        <servlet-name>firstDemo</servlet-name>
+        <servlet-class>com.demo.servletDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>secondDemo</servlet-name>
+        <servlet-class>com.demo.servletDemoSecond</servlet-class>
+    </servlet>
+
+    <!--    servlet mapping-->
+    <servlet-mapping>
+        <servlet-name>firstDemo</servlet-name>
+        <url-pattern>/web</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>secondDemo</servlet-name>
+        <url-pattern>/second</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+

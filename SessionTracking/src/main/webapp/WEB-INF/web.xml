@@ -1,0 +1,29 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>session1</servlet-name>
+    <servlet-class>com.session.servlet1</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>session2</servlet-name>
+    <servlet-class>com.session.servlet2</servlet-class>
+  </servlet>
+
+  <!-- Mapping for session1 -->
+  <servlet-mapping>
+    <servlet-name>session1</servlet-name>
+    <url-pattern>/session1</url-pattern>
+  </servlet-mapping>
+
+  <!-- Mapping for session2 -->
+  <servlet-mapping>
+    <servlet-name>session2</servlet-name>
+    <url-pattern>/session2</url-pattern>
+  </servlet-mapping>
+</web-app>
